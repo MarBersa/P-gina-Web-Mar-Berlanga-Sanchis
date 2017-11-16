@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera web</title>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href="">Quien soy</a>
+            </li>
+            <li>
+                <a href="">Equipo</a>
+            </li>
+            <li>
+                <a href="">Transporte</a>
+            </li>
+            <li>
+                <a href="">Contacto</a>
+            </li>
+            <li>
+                <a href="">Tareas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+        </section>
+
+        <section>
+        </section>
+
+        <section>
+        </section>
+    </main>
+
+    <footer>
+    </footer>  
+
+</body>
+</html>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera web</title>
+</head>
+<body>
+    <header class="header">
+         <!--Foto grande y título-->
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item active">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#quien-soy">Quien soy</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#equipo">Equipo</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#transporte">Transporte</a>
+            </li>
+            <li class="navbar-item">
+                <a href="contact.html">Contacto</a>
+            </li>
+            <li class="navbar-item">
+                <a href="tasks.html">Tareas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="quien-soy" class="about-me clearfix section-container">
+            <div class="batman-video">
+                <!--video-->
+            </div>
+            <div class="batman-info">
+                <!--Información de Batman-->
+            </div>
+        </section>
+
+        <section id="equipo" class="team section-reverse section-container">
+            <div class="row container">
+                <div class="col-4">
+                    <article class="team-member">
+                         <!--Alfred (foto, texto, personaje, actor)-->
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="team-member">
+                         <!--Harvey (foto, texto, personaje, actor)-->
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="team-member">
+                         <!--James (foto, texto, personaje, actor)-->
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="transporte" class="transport section-container">
+            <div class="row-flex">
+                <div class="transport-item">
+                    <!--Coche-->
+                </div>
+                <div class="transport-item">
+                    <!--Moto-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!--Información final-->
+    </footer>
+</body>
+</html>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+

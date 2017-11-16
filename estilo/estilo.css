@@ -1,0 +1,433 @@
+* {
+    font-family: 'Cutive Mono', monospace;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: apple;
+    src: url(../fuentes/apple.ttf);
+    font-family: sacramento;
+    src: url(../fuentes/cultive-mono.ttf);
+    font-family: frederica;
+    src: url(../fuentes/frederickathegreat.ttf);
+    font-family: josefina;
+    src: url(../fuentes/josefina.ttf);
+    font-family: angeline;
+    src: url(../fuentes/angeline.ttf);
+    font-family: cedarville-cursive;
+    src: url(../fuentes/cedarville-cursive.ttf);
+    font-family: permanent;
+    src: url(../fuentes/permanent.ttf);
+}
+
+/* 1- COLOR 1º Y 2º DE LA PÁGINA WEB*/
+body {
+    margin: 0;
+    padding: 0;
+    --main-text-color: #F7F7F7;
+    --secondary-text-color: #d2bfc3;
+}
+
+
+/* 1.1- COLOR 1º Y 2º DE LA PÁGINA MARCAS*/
+.body-equipo{
+    margin: 0;
+    padding: 0;
+    --main-text-color: rgb(0, 0, 0);
+    --secondary-text-color: #d2bfc3;
+}
+
+
+
+
+
+.clearfix:after {
+    content:"";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+.header > .title-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../quienes-somos/fondo.jpg);
+    height: 100vh;
+    transition: background-size 0.8s;
+}
+
+.header > .title-img:hover{
+    background-size: 115% 115%;
+}
+
+
+/*2- COLOR TÍTULO J BERLANGA*/
+.header > .title {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: #491419;
+    font-family: permanent;
+    z-index: 1;
+
+    animation: titleAnimation 2s forwards;
+    /*animation-delay: 0.8s;*/
+    visibility: hidden;
+}
+
+
+/*3- COLOR CITA 'DESDE 1996' -- INICIO */
+
+.header > .title-cite {
+    position: absolute;
+    top: 60%;
+    width: 40px;
+    text-align: center;
+    font-size: 50px;
+    color: #faebed;
+    font-family: permanent;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+
+
+.navbar {
+    background-color: var(--main-text-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar > .navbar-list {
+    list-style: none;
+    margin: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+    font-size: 16px;
+}
+
+/* 4- Color ítems BARRA*/
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: #61252f;
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+.navbar > .navbar-list > .navbar-item.active a{
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.imagenes.m img {
+    height: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* 5- Color 2 BLOQUE */
+.section-reverse {
+    /*background-color: #cfb5be;
+}.*/
+    background-color: #d2bfc3;
+    color: var(--main-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+
+.section-reverse-marcas {
+    /*background-color: #cfb5be;
+}.*/
+    background-color: #ffffff;
+    color: var(--main-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+
+.about-me > .joyeria-video {
+    float: left;
+    max-width: 50%;
+}
+
+.about-me > .joyeria-info {
+    float: right;
+    max-width: 50%;
+}
+
+.team-member-foto img {
+    height: 300px;
+    max-width: 100%;
+    border-radius: 40%;
+}
+
+.bio {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+.flip {
+    height: 305px;
+    position: relative;
+}
+
+.flip-img {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 6- Color TÍTULO TABLA -- Contacto*/
+thead > tr {
+    background-color: #cea0c3;
+}
+
+th {
+    height: 50px;
+}
+
+
+
+/* 7- Color RAYAS TABLA -- Inicio*/
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+
+
+/* 8- Color SELECCIÓN ÍTEM BARRA -- Inicio*/
+tbody > tr:hover {
+background-color:#ccb3c6;
+}
+
+#googleMap {
+    height: 400px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+/* 9- BOCADILLOS FICHERO -- Contacto */
+input {
+    padding: 4px;
+    border: 1px solid #ffbdeb;
+    border-radius: 4px;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+
+/* 10- BOTÓN ENVIAR -- Contacto */
+input[type=button], input[type=submit], button {
+    background-color: #ccb3c6;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.marcas-img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10%;
+}
+
+/*.t-marcas {
+   float: center;*/
+
+}
+
+.marcas-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
+
+.marcas-info {
+    float: center;
+    max-width: 50%;
+}
+
+
+.marcas-titulo {
+   display: flex;
+   flex-wrap: wrap;
+   align-self: center;
+
+}
+
+.other-photo img {
+    height: 400px;
+    max-width: 200%;
+    float: right;
+}
+
+
+
+/* 11- FOOTER */
+.footer {
+    background-color: #be5b70;
+    color: var(--main-text-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.real-name {
+    background-color: #be5b70;
+    color: var(--main-text-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-marcas {
+    background-color: var(--secondary-text-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-marcas > .navbar-list-marcas {
+    list-style: none;
+    margin: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar-marcas > .navbar-list-marcas > .navbar-item-marcas {
+    display: inline;
+    font-size: 16px;
+}
+
+.navbar-marcas > .navbar-list-marcas > .navbar-item-marcas a {
+    padding: 20px;
+    text-decoration: none;
+    color: #61252f;
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+.navbar-marcas > .navbar-list-marcas > .navbar-item.active-marcas a{
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navbar-marcas > .navbar-list-marcas > .navbar-item-marcas a:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+@keyframes titleAnimation {
+    0% {
+        font-size: 200px;
+    }
+
+    50% {
+        font-size: 150px;
+    }
+
+    100% {
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+
+@keyframes subtitleAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
